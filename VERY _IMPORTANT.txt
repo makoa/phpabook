@@ -1,0 +1,19 @@
+VERY IMPORTANT!
+
+This is the phpABook version 0.9 Intermediate.
+Please bear in mind this will be the very
+last release using this code. The next version
+should be not compatible nor upgradeable
+without complete removal of the old script INCLUDING DATABASE.
+
+I will do my best to provide easy to follow instructions on how
+to upgrade but should ask for extensive work.
+
+Next version will be 1.0 and should be available in mid July 2016
+and will feature a new code, new features and new and modern design.
+To receive updates, please subscrive to our mailing list.
+
+Thank you for your understanding
+
+Glnei Moraes
+June 2016

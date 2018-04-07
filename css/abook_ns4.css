@@ -1,0 +1,173 @@
+body
+{
+	background-color: #CCCCCC;
+	color: #000000;
+	margin-top: 10px;
+	margin-left: 0px;
+	font-family: verdana, geneva, arial, sans-serif;
+	font-size: 10px;
+}
+a
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #0000CC;
+}
+a:hover
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+	font-variant: bold;
+}
+.text
+{
+	font-family: verdana, geneva, arial, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+.bold
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.italic
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+}
+.bitalic
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: bold;
+}
+.mainTable
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	background-color: #99CC33;
+}
+.list_row
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+}
+.nameHeader
+{
+	background-color: #336600;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-indent: 25px;
+}
+.label
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: right;
+}
+.viewTable
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	background-color: #CCFF99;
+}
+input, textarea, select
+{
+	background-color: #99CC33;
+	font-family: monaco, mono-space;
+	font-size: 10px;
+}
+.menuTD
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	padding-right: 12px;
+	padding-bottom: 2px;
+	padding-top: 0px;
+}
+.menuTD a
+{
+	color: #990000;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 10px;
+}
+.menuTD a:hover
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	color: #0000CC;
+}
+.subHeader
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-indent: 75px;
+	background-color: #669900;
+	color: #FFFFFF;
+}
+.buttons
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #990000;
+	cursor: hand;
+}
+.rolodex
+{
+	text-align: center;
+	padding-bottom: 4px;
+	padding-top: 0px;
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+}
+.rolodex a
+{
+	color: #990000;
+	text-decoration: none;
+	padding: 0px;
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+
+}
+.rolodex a:hover
+{
+	color: #000000;
+	padding: 0px;
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+}
+.rolodex_sel
+{
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #336600;
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+}
+.dimed
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	color: #669900;
+	padding: 4px;
+}
+.dimed a
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 10px;
+	color: #669900;
+}
+

@@ -1,0 +1,101 @@
+INSTALLATION
+-------------------------------------------------------------------------
+
+This is pretty easy to set up if you are familiar with MySQL and PHP. If you're not, don't sweat it, I'll walk you through it one step at a time. For simplicity sake, all lines that begin with a '%>' are commands to be run in a telnet/ssh/shell session (if you don't know what this is, you probably don't have access). If you don't have shell access, no problem. as long as you have MySQL and PHP, you can install phpAbook. I'll break it down into to sections: with shell and without shell.
+
+
+WITH SHELL ACCESS
+-------------------------------------------------------------------------
+
+1.	Unpack the source (if you're reading this, you already have).
+
+2.	Move into the 'SQL' directory
+
+	%> cd SQL
+	
+3.	There you will see three files: ab_records.sql, ab_auth_user.sql &
+	update_ab_records.sql . If you're upgrading from a previous version (prior
+	to v0.7.1b) all you need to do is run the update file through mysql. If this
+	is a fresh install, don't worry about the update file...you don't need it.
+	
+	UPGRADING
+	---------------------------------------------------------------------
+	At the shell prompt, type the following:
+	
+	%> mysql -u <username> -p <database> < update_ab_records.sql
+	where <username> is your mysql username and <database> is the database in
+	which you have access to
+	
+	You will be prompted for your password for mysql access, enter it. That's
+	it! You're done!
+	
+	FIRST INSTALL
+	---------------------------------------------------------------------
+	At the shell prompt, type the following:
+	
+	%> mysql -u <username> -p <database> < ab_records.sql
+	where <username> is your mysql username and <database> is the database in
+	which you have access to
+	
+	You will be prompted for your mysql password, enter it.
+	
+	%> mysql -u <username> -p <database> < ab_auth_user.sql
+	
+	You will be prompted for your password again, enter it.
+	
+	If you didn't get any errors, then this step is complete. You may move on to
+	the next step. If you did get errors, check your username and password and
+	try again. If you're sure you entered in the correct username and password,
+	I can't really explain all the possibilities here and now. You can email me
+	with the errors and I will try to help you out.
+	
+4.	Edit the file named config.inc.php inside the 'include' directory. It's
+	pretty well documented on what needs to be changed so open it up and go for
+	it.
+	
+	After that, you're all done. you can rename the phpAbook-[version] folder to
+	whatever you like...heck, you can even rename the index.php file to whatever
+	you like (although, it's not really advisable).
+	
+5.	-- IMPORTANT ---- IMPORTANT ---- IMPORTANT ---- IMPORTANT ---- IMPORTANT --
+	This is important (can you tell) once you have it installed, you can login
+	to your new Abook using the default username and password:
+	
+	Username: admin
+	Password: phpAbookadmin
+	
+	The password IS case sensitive, so enter it exactly as shown here. Once
+	you've logged in it is STRONLY ADVISABLE THAT YOU CHANGE THE PASSWORD
+	IMMEDIATELY. Or better still, create a new admin user with a different name
+	and password altogether. Everyone knows the default info...unless you don't
+	care about people's privacy, at which time I would say you shouldn't be	
+	using this program.
+	
+	That's it...good luck!
+	
+
+WITHOUT SHELL ACCESS
+-------------------------------------------------------------------------
+
+If you don't have shell access, not all is lost for you (although, I feel really bad for you). No problem, BUT it will require a bit more work. You'll need a second PHP program to manage the MySQL queries to create the tables. I recomend (and fully support) phpMyAdmin. If you have this already...great, that saves you the time of installing it. If not, you'll have to download it from:
+
+http://phpmyadmin.sourceforge.net
+
+I'm not going to regurgitate their install instructions here, you'll have to read their documentation on the installation (don't worry, it's not that hard). After it's installed and running, you're ready to continue the Abook install.
+
+In the left frame of the phpMyAdmin app, you'll see a textarea labled "Run SQL query/queries..." Just below that you'll see "Or location of the textfile:" with a browse button.
+
+Click that button and select the ab_records.sql file from your hard drive.
+
+Click the 'Go' button. It might take a second or two for the file to upload to the server...wait it out. Your records table should now be created and you should see it listed in the left frame.
+
+Repeat the process for the ab_auth_user.sql file.
+
+That's it! You should now see both tables listed in the left frame. Once you're done, go to step 4 above and edit the config file.
+
+-------------------------------------------------------------------------
+If you have any issues with installing, check the phpAbook website and forum first...you might find you're answer there. Otherwise, send me aline with the errors you are getting, and I'll try to help you out.
+
+Thanks for using phpAbook, and enjoy your flight.
+- Gilnei Moraes
+- gilneim@hotmail.com
